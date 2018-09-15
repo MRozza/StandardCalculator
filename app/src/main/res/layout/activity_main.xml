@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="none"
+        android:text="@string/btn0"
+        android:textAlignment="viewEnd"
+        android:textSize="36sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.28"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_c"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCalculator"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_r"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btnC"
+        app:layout_constraintTop_toBottomOf="@id/txtCalculator"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_p"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btnR"
+        app:layout_constraintTop_toBottomOf="@id/txtCalculator"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_d"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btnP"
+        app:layout_constraintTop_toBottomOf="@id/txtCalculator"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn7"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnC"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn8"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn7"
+        app:layout_constraintTop_toBottomOf="@id/btnR"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn9"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn8"
+        app:layout_constraintTop_toBottomOf="@id/btnP"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn_x"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_x"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn9"
+        app:layout_constraintTop_toBottomOf="@id/btnD"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn4"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn7"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn5"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn4"
+        app:layout_constraintTop_toBottomOf="@id/btn8"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn6"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn9"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_s"
+        android:textSize="35dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn6"
+        app:layout_constraintTop_toBottomOf="@id/btn_x"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn4"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn2"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@id/btn5"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn3"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn6"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_a"
+        android:textSize="25dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn3"
+        app:layout_constraintTop_toBottomOf="@id/btnS"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnPM"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_pm"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn0"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btnPM"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnDot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn."
+        android:textSize="35dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btn0"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/btnE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_e"
+        android:textSize="30dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintStart_toEndOf="@id/btnDot"
+        app:layout_constraintTop_toBottomOf="@id/btnA"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+</android.support.constraint.ConstraintLayout>
